@@ -195,30 +195,30 @@ body {
   font-weight: 500;
   color: var(--main-color, black);
 }
-.social-icon-grey{
- width: 20px;
+.social-icon-grey {
+  width: 20px;
   height: 20px;
-  fill: #AFB1B8;
+  fill: #afb1b8;
   align-self: center;
 }
-.social-icon-grey:hover{
+.social-icon-grey:hover,
+.social-icon-grey:focus {
   fill: white;
 }
 
-.social-crew{
+.social-crew {
   width: 44px;
   height: 44px;
   border-radius: 50%;
   display: flex;
   justify-content: center;
 }
-.social-crew:hover{
+.social-crew:hover,
+.social-crew:focus {
   background-color: var(--brand-blue, blue);
   border: 1px solid var(--brand-blue, blue);
   fill: white;
 }
-
-
 
 .section-footer {
   background-color: #2f303a;
@@ -289,7 +289,8 @@ body {
   color: var(--secondary-color, grey);
 }
 
-.product-card:hover {
+.product-card:hover,
+.product-card:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -323,7 +324,8 @@ body {
   fill: #afb1b8;
   margin: 15px;
 }
-.icon:hover {
+.icon:hover,
+.icon:focus {
   border: 1px solid #2196f3;
   border-radius: 4px;
   fill: #2196f3;
@@ -357,7 +359,8 @@ body {
   display: flex;
   justify-content: center;
 }
-.social-icon-bg:hover {
+.social-icon-bg:hover,
+.social-icon-bg:focus {
   background-color: var(--brand-blue, blue);
   border: 1px solid var(--brand-blue, blue);
 }
