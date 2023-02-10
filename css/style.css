@@ -79,6 +79,13 @@ body {
   color: var(--brand-blue, blue);
   fill: var(--brand-blue, blue);
 }
+.nav-contact:hover,
+.nav-contact:focus >.contact-icon{
+  color: var(--brand-blue, blue);
+  fill: var(--brand-blue, blue);
+}
+
+
 .nav-list-contacts {
   display: flex;
 }
@@ -201,10 +208,6 @@ body {
   fill: #afb1b8;
   align-self: center;
 }
-.social-icon-grey:hover,
-.social-icon-grey:focus {
-  fill: white;
-}
 
 .social-crew {
   width: 44px;
@@ -217,6 +220,8 @@ body {
 .social-crew:focus {
   background-color: var(--brand-blue, blue);
   border: 1px solid var(--brand-blue, blue);
+}
+.social-crew:hover>.social-icon-grey{
   fill: white;
 }
 
