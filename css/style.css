@@ -39,7 +39,7 @@ body {
 
 .logo {
   font-family: "Raleway", sans-serif;
-  color: var(--brand-blue, blue);
+  color: var(--brand-blue);
   font-weight: 700;
   font-size: 26px;
   text-decoration: none;
@@ -62,29 +62,29 @@ body {
 }
 .nav-links :hover,
 .nav-links :focus {
-  color: var(--brand-blue, blue);
+  color: var(--brand-blue);
 }
 .nav-list-contacts {
   align-items: center;
   list-style: none;
+  padding: 10px;
 }
 .nav-contact {
   color: var(--secondary-color, grey);
   text-decoration: none;
   margin: 0px 50px;
+    padding: 10px;
 }
 
-.nav-contact:hover,
-.nav-contact:focus {
-  color: var(--brand-blue, blue);
-  fill: var(--brand-blue, blue);
-}
-.nav-contact:hover,
-.nav-contact:focus >.contact-icon{
-  color: var(--brand-blue, blue);
-  fill: var(--brand-blue, blue);
+.nav-contact:hover{
+  color: var(--brand-blue);
+  fill: var(--brand-blue);
 }
 
+.nav-contact:hover >.contact-icon{
+  color: var(--brand-blue);
+  fill: var(--brand-blue);
+}
 
 .nav-list-contacts {
   display: flex;
@@ -94,11 +94,6 @@ body {
   height: 12px;
   fill: #757575;
   margin-right: 10px;
-}
-.contact-icon:hover,
-.contact-icon:focus {
-  fill: var(--brand-blue, blue);
-  color: var(--brand-blue, blue);
 }
 
 .main-header {
@@ -134,7 +129,7 @@ body {
   text-transform: none;
   width: 200px;
   height: 50px;
-  background-color: var(--brand-blue, blue);
+  background-color: var(--brand-blue);
   border-radius: 4px;
   border: none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -155,16 +150,16 @@ body {
 .list-asset {
   list-style-type: none;
   padding: 0;
+  display: flex;
+  gap: 30px;
 }
 
 .asset-card {
   width: 270px;
   height: 120px;
   background-color: #f5f4fa;
-  float: left;
   border: 1px solid #f5f4fa;
   border-radius: 4px;
-  margin-right: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -218,8 +213,9 @@ body {
 }
 .social-crew:hover,
 .social-crew:focus {
-  background-color: var(--brand-blue, blue);
-  border: 1px solid var(--brand-blue, blue);
+  background-color: var(--brand-blue);
+  border: 1px solid var(--brand-blue);
+   cursor: pointer;
 }
 .social-crew:hover>.social-icon-grey{
   fill: white;
@@ -252,7 +248,8 @@ body {
 }
 .footer-contact:hover,
 .footer-contact:focus {
-  color: var(--brand-blue, blue);
+  color: var(--brand-blue);
+   cursor: pointer;
 }
 
 .portfolio-main {
@@ -280,10 +277,11 @@ body {
 .button:focus {
   border-radius: 4px;
   color: #ffffff;
-  background-color: var(--brand-blue, blue);
-  border-color: var(--brand-blue, blue);
+  background-color: var(--brand-blue);
+  border-color: var(--brand-blue);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
+  0px 2px 2px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
 }
 .product-card {
   box-sizing: border-box;
@@ -298,6 +296,7 @@ body {
 .product-card:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
+    cursor: pointer;
 }
 
 .product-card-header {
@@ -321,25 +320,35 @@ body {
 }
 
 .icon {
-  width: 170px;
-  height: 92px;
-  float: left;
-  border: 1px solid #afb1b8;
-  border-radius: 4px;
+  width: 106px;
+  height: 60.4px;
   fill: #afb1b8;
-  margin: 15px;
 }
-.icon:hover,
-.icon:focus {
-  border: 1px solid #2196f3;
-  border-radius: 4px;
-  fill: #2196f3;
+.icon-container{
+display: flex;
+width: 170px;
+height: 92px;
+border: 1px solid #AFB1B8;
+border-radius: 4px;
+align-items: center;
+justify-content: center;
 }
+.icon-container:hover >.icon{
+   fill: #2196f3;
+} 
+.icon-container:hover{
+   fill: #2196f3;
+   border: 1px solid #2196f3;
+   cursor: pointer;
+} 
+
 .list-clients {
+  display: flex;
   list-style-type: none;
   margin: 0 auto;
   padding: 0;
   max-width: 1170;
+  gap: 30px;
 }
 .social-header {
   font-weight: 700;
@@ -366,8 +375,9 @@ body {
 }
 .social-icon-bg:hover,
 .social-icon-bg:focus {
-  background-color: var(--brand-blue, blue);
-  border: 1px solid var(--brand-blue, blue);
+  background-color: var(--brand-blue);
+  border: 1px solid var(--brand-blue);
+   cursor: pointer;
 }
 .social-list {
   display: flex;
