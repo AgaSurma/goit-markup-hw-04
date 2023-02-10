@@ -5,7 +5,7 @@
 }
 body {
   font-family: "Roboto", sans-serif;
-  color: var(--main-color, black);
+  color: var(--main-color);
   font-size: 14px;
   display: block;
 }
@@ -20,12 +20,6 @@ body {
   list-style-type: none;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding: 0;
-}
-.nav-list {
-  list-style-type: none;
-  display: inline-flex;
   align-items: center;
   padding: 0;
 }
@@ -52,7 +46,7 @@ body {
   color: #ffffff;
 }
 .nav-links {
-  color: var(--main-color, black);
+  color: var(--main-color);
   text-decoration: none;
 }
 .link {
@@ -68,20 +62,25 @@ body {
   align-items: center;
   list-style: none;
   padding: 10px;
+  justify-content: space-between;
 }
 .nav-contact {
   color: var(--secondary-color, grey);
   text-decoration: none;
   margin: 0px 50px;
-    padding: 10px;
+  padding: 10px;
 }
 
-.nav-contact:hover{
+.nav-contact:hover {
   color: var(--brand-blue);
   fill: var(--brand-blue);
 }
 
-.nav-contact:hover >.contact-icon{
+.nav-contact:hover > .contact-icon {
+  color: var(--brand-blue);
+  fill: var(--brand-blue);
+}
+.nav-contact:hover > .contact-icon-phone {
   color: var(--brand-blue);
   fill: var(--brand-blue);
 }
@@ -92,6 +91,12 @@ body {
 .contact-icon {
   width: 16px;
   height: 12px;
+  fill: #757575;
+  margin-right: 10px;
+}
+.contact-icon-phone {
+  width: 10px;
+  height: 16px;
   fill: #757575;
   margin-right: 10px;
 }
@@ -144,7 +149,7 @@ body {
   font-weight: 700;
   line-height: 1.1;
   letter-spacing: 0, 03em;
-  color: var(--main-color, black);
+  color: var(--main-color);
   text-transform: uppercase;
 }
 .list-asset {
@@ -195,7 +200,7 @@ body {
 }
 .card-header {
   font-weight: 500;
-  color: var(--main-color, black);
+  color: var(--main-color);
 }
 .social-icon-grey {
   width: 20px;
@@ -215,9 +220,9 @@ body {
 .social-crew:focus {
   background-color: var(--brand-blue);
   border: 1px solid var(--brand-blue);
-   cursor: pointer;
+  cursor: pointer;
 }
-.social-crew:hover>.social-icon-grey{
+.social-crew:hover > .social-icon-grey {
   fill: white;
 }
 
@@ -249,7 +254,7 @@ body {
 .footer-contact:hover,
 .footer-contact:focus {
   color: var(--brand-blue);
-   cursor: pointer;
+  cursor: pointer;
 }
 
 .portfolio-main {
@@ -266,7 +271,7 @@ body {
   font-size: 16px;
   line-height: 1.6;
   text-align: center;
-  color: var(--main-color, black);
+  color: var(--main-color);
   cursor: pointer;
   padding: 5px 10px;
   background-color: #f5f4fa;
@@ -280,7 +285,7 @@ body {
   background-color: var(--brand-blue);
   border-color: var(--brand-blue);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-  0px 2px 2px rgba(0, 0, 0, 0.12);
+    0px 2px 2px rgba(0, 0, 0, 0.12);
   cursor: pointer;
 }
 .product-card {
@@ -296,14 +301,14 @@ body {
 .product-card:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .product-card-header {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
-  color: var(--main-color, black);
+  color: var(--main-color);
   margin-left: 15px;
 }
 .product-card-property {
@@ -324,23 +329,23 @@ body {
   height: 60.4px;
   fill: #afb1b8;
 }
-.icon-container{
-display: flex;
-width: 170px;
-height: 92px;
-border: 1px solid #AFB1B8;
-border-radius: 4px;
-align-items: center;
-justify-content: center;
+.icon-container {
+  display: flex;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  align-items: center;
+  justify-content: center;
 }
-.icon-container:hover >.icon{
-   fill: #2196f3;
-} 
-.icon-container:hover{
-   fill: #2196f3;
-   border: 1px solid #2196f3;
-   cursor: pointer;
-} 
+.icon-container:hover > .icon {
+  fill: #2196f3;
+}
+.icon-container:hover {
+  fill: #2196f3;
+  border: 1px solid #2196f3;
+  cursor: pointer;
+}
 
 .list-clients {
   display: flex;
@@ -377,7 +382,7 @@ justify-content: center;
 .social-icon-bg:focus {
   background-color: var(--brand-blue);
   border: 1px solid var(--brand-blue);
-   cursor: pointer;
+  cursor: pointer;
 }
 .social-list {
   display: flex;
