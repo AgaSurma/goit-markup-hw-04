@@ -145,6 +145,9 @@ body {
   letter-spacing: 0, 03em;
   color: var(--secondary-color, grey);
 }
+.asset-list{
+  gap: 30px;
+}
 .first-section-header {
   font-weight: 700;
   line-height: 1.1;
@@ -352,7 +355,7 @@ body {
   list-style-type: none;
   margin: 0 auto;
   padding: 0;
-  max-width: 1170;
+  justify-content: space-between;
   gap: 30px;
 }
 .social-header {
